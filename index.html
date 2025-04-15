@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Soluções Tecnológicas - Conserto de Celulares</title>
+  <meta name="description" content="Técnico de manutenção de celulares com atendimento rápido, confiável e humanizado.">
+  <meta name="keywords" content="manutenção de celulares, conserto de celular, técnico de celular, troca de tela, JC soluções">
+  <meta name="author" content="Marcos Vittor">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/833/833472.png" type="image/png">
+
+  <!-- Google Fonts e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #eaeaea;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    header h1 { margin-bottom: 0.3rem; font-size: 1.8rem; }
+    nav a {
+      margin: 0 1rem;
+      color: #bbb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { color: #fff; }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 280px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .about, .testimonials, .form-contato {
+      background-color: #1f1f1f;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .testimonial {
+      border-left: 4px solid #00bfff;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .form-contato input, .form-contato textarea {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border-radius: 4px;
+      border: none;
+      background-color: #333;
+      color: white;
+    }
+    .form-contato button {
+      margin-top: 1rem;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-contato button:hover {
+      background-color: #0099cc;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .botoes-cta {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .botoes-cta a {
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .whatsapp {
+      background-color: #25d366;
+      color: #fff;
+    }
+    .instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: #fff;
+    }
+    #whatsapp-fixo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      padding: 1rem;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e1e1e;
+      color: #aaa;
+      margin-top: 2rem;
+    }
+  </style>
+
+  <!-- Google Analytics (Substitua pelo seu ID se desejar) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <a id="whatsapp-fixo" href="https://wa.me/5585996676016" target="_blank"><i class="bi bi-whatsapp"></i></a>
+
+  <header>
+    <h1>JC Soluções Tecnológicas</h1>
+    <p>Conserto profissional de celulares com atendimento humanizado</p>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="servicos">
+    <h2>Galeria de Serviços</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/280x180?text=Troca+de+Tela" alt="Troca de Tela">
+      <img src="https://via.placeholder.com/280x180?text=Placa+Oxidada" alt="Placa oxidada">
+      <img src="https://via.placeholder.com/280x180?text=Microfone+com+defeito" alt="Microfone">
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <h2>Sobre Mim</h2>
+    <p>Sou um técnico dedicado a devolver a funcionalidade e a confiança aos aparelhos dos meus clientes. Cada serviço é realizado com cuidado, transparência e respeito.</p>
+  </section>
+
+  <section id="depoimentos" class="testimonials">
+    <h2>O que dizem meus clientes</h2>
+    <div class="testimonial">
+      <p>"Melhor atendimento técnico da cidade! Profissionalismo e agilidade."</p>
+    </div>
+    <div class="testimonial">
+      <p>"Resolvi meu problema em menos de 1 dia. Recomendo demais!"</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Vamos conversar?</h2>
+    <p>Me chame no WhatsApp ou Instagram agora mesmo!</p>
+    <div class="botoes-cta">
+      <a class="whatsapp" href="https://wa.me/5585996676016" target="_blank">WhatsApp</a>
+      <a class="instagram" href="https://instagram.com/jc_solucoestecnologicas" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <section id="contato" class="form-contato">
+    <h2>Fale comigo</h2>
+    <form onsubmit="alert('Mensagem enviada com sucesso!'); return false;">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem..." rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section class="audio-control" style="text-align:center; margin-top:2rem;">
+    <h3>Música ambiente</h3>
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-energy.mp3" type="audio/mp3">
+    </audio>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JC Soluções Tecnológicas. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
